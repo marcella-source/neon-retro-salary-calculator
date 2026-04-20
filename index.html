@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌴 Payday Paradise 🌞</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #022c3d;
+    font-family: 'Courier New', monospace;
+  }
+</style>
+</head>
+<body>
+<div id="money-app" style="font-family: 'Courier New', monospace; color: #fff; padding: 0; overflow: hidden; border-radius: 12px; min-height: 680px;">
+
+<div style="position: absolute; inset: 0; background: linear-gradient(180deg, #022c3d 0%, #05445e 22%, #0a6e7e 42%, #2fa491 55%, #8fd49b 63%, #f7d98a 70%, #f4c97a 78%, #e8b86a 100%); z-index: 0; border-radius: 12px;"></div>
+
+<svg viewBox="0 0 680 680" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; border-radius: 12px;">
+<defs>
+<linearGradient id="sun2" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#fff7c2"/>
+<stop offset="0.4" stop-color="#ffe066"/>
+<stop offset="0.8" stop-color="#ffb830"/>
+<stop offset="1" stop-color="#ff9a3c"/>
+</linearGradient>
+<radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#fff7c2" stop-opacity="0.55"/>
+<stop offset="1" stop-color="#fff7c2" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="sand" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#fae2a1"/>
+<stop offset="0.5" stop-color="#f4c97a"/>
+<stop offset="1" stop-color="#d4a258"/>
+</linearGradient>
+</defs>
+
+<circle cx="340" cy="370" r="240" fill="url(#sunGlow)"/>
+<circle cx="340" cy="375" r="105" fill="url(#sun2)" opacity="0.95"/>
+
+<path d="M 0 415 Q 90 411 180 417 T 360 415 T 540 419 T 680 415 L 680 445 L 0 445 Z" fill="#0a6e7e" opacity="0.4"/>
+<path d="M 0 430 Q 110 426 220 432 T 440 430 T 680 432 L 680 455 L 0 455 Z" fill="#2fa491" opacity="0.45"/>
+
+<g stroke="#fff7c2" stroke-width="0.8" fill="none" opacity="0.7">
+<path d="M 40 408 Q 80 406 120 408"/>
+<path d="M 200 424 Q 240 422 280 424"/>
+<path d="M 360 410 Q 400 408 440 410"/>
+<path d="M 500 427 Q 540 425 580 427"/>
+<path d="M 100 440 Q 140 438 180 440"/>
+<path d="M 320 442 Q 360 440 400 442"/>
+</g>
+
+<path d="M 0 468 Q 100 458 200 465 Q 300 463 400 469 Q 500 471 600 467 Q 680 465 680 470 L 680 680 L 0 680 Z" fill="url(#sand)"/>
+
+<path d="M 0 468 Q 100 458 200 465 Q 300 463 400 469 Q 500 471 600 467 Q 680 465 680 471" stroke="#fff7c2" stroke-width="1.5" fill="none" opacity="0.9"/>
+<path d="M 0 476 Q 110 467 220 474 Q 320 472 420 476 Q 520 478 620 474 Q 680 473 680 478" stroke="#fff" stroke-width="0.8" fill="none" opacity="0.65"/>
+
+<g fill="#c98e4f" opacity="0.55">
+<circle cx="60" cy="540" r="1.4"/>
+<circle cx="120" cy="580" r="1.2"/>
+<circle cx="200" cy="515" r="1"/>
+<circle cx="260" cy="600" r="1.3"/>
+<circle cx="340" cy="555" r="1"/>
+<circle cx="410" cy="620" r="1.2"/>
+<circle cx="490" cy="525" r="1"/>
+<circle cx="560" cy="595" r="1.4"/>
+<circle cx="620" cy="545" r="1"/>
+<circle cx="90" cy="640" r="1.2"/>
+<circle cx="300" cy="655" r="1.1"/>
+<circle cx="530" cy="645" r="1.3"/>
+<circle cx="180" cy="665" r="1.2"/>
+<circle cx="450" cy="670" r="1"/>
+</g>
+
+<g fill="#fff" opacity="0.75">
+<ellipse cx="155" cy="560" rx="5" ry="2.5"/>
+<path d="M 151 560 Q 155 555 159 560" stroke="#e8b86a" stroke-width="0.6" fill="none"/>
+<ellipse cx="445" cy="590" rx="4" ry="2"/>
+<path d="M 442 590 Q 445 586 448 590" stroke="#e8b86a" stroke-width="0.6" fill="none"/>
+<ellipse cx="580" cy="625" rx="5" ry="2.5"/>
+<path d="M 576 625 Q 580 620 584 625" stroke="#e8b86a" stroke-width="0.6" fill="none"/>
+</g>
+
+<g opacity="0.7">
+<path d="M 380 580 Q 395 573 410 580 Q 412 590 400 596 Q 385 593 380 580" fill="#ff6b4a"/>
+<ellipse cx="395" cy="583" rx="3" ry="1.5" fill="#d94a2a"/>
+</g>
+
+<g stroke="#012a2f" stroke-width="0.8" fill="none" opacity="0.8">
+<path d="M 140 520 Q 150 515 160 518 Q 165 513 170 518 Q 178 515 185 520"/>
+<path d="M 480 555 Q 490 550 500 553 Q 505 548 510 553 Q 518 550 525 555"/>
+</g>
+
+<g>
+<path d="M 60 470 Q 68 370 54 265" stroke="#012a2f" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M 60 470 Q 68 370 54 265" stroke="#2fe0c4" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.85"/>
+<path d="M 54 265 Q 22 255 -2 272 Q 26 260 56 272" fill="#012a2f" stroke="#2fe0c4" stroke-width="0.8"/>
+<path d="M 54 265 Q 89 253 119 268 Q 86 258 56 272" fill="#012a2f" stroke="#2fe0c4" stroke-width="0.8"/>
+<path d="M 54 265 Q 34 235 12 225 Q 39 250 56 270" fill="#012a2f" stroke="#2fe0c4" stroke-width="0.8"/>
+<path d="M 54 265 Q 82 238 112 230 Q 84 255 56 272" fill="#012a2f" stroke="#ffe066" stroke-width="0.8"/>
+<path d="M 54 265 Q 52 232 44 212 Q 58 240 59 270" fill="#012a2f" stroke="#ffe066" stroke-width="0.8"/>
+<circle cx="62" cy="275" r="3" fill="#ffb830"/>
+<circle cx="52" cy="278" r="2.5" fill="#ff9a3c"/>
+</g>
+
+<g>
+<path d="M 620 470 Q 615 370 626 260" stroke="#012a2f" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M 620 470 Q 615 370 626 260" stroke="#2fe0c4" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.85"/>
+<path d="M 626 260 Q 598 250 576 265 Q 604 253 624 268" fill="#012a2f" stroke="#2fe0c4" stroke-width="0.8"/>
+<path d="M 626 260 Q 658 248 684 264 Q 656 255 624 268" fill="#012a2f" stroke="#ffe066" stroke-width="0.8"/>
+<path d="M 626 260 Q 604 230 582 220 Q 608 246 626 268" fill="#012a2f" stroke="#2fe0c4" stroke-width="0.8"/>
+<path d="M 626 260 Q 652 232 678 224 Q 656 250 628 268" fill="#012a2f" stroke="#ffe066" stroke-width="0.8"/>
+<path d="M 626 260 Q 628 228 634 208 Q 626 238 624 268" fill="#012a2f" stroke="#2fe0c4" stroke-width="0.8"/>
+<circle cx="618" cy="272" r="3" fill="#ffb830"/>
+<circle cx="628" cy="275" r="2.5" fill="#ff9a3c"/>
+</g>
+
+<g opacity="0.5">
+<path d="M 195 465 Q 199 410 193 370" stroke="#012a2f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M 193 370 Q 178 363 166 375" fill="#012a2f"/>
+<path d="M 193 370 Q 208 363 220 375" fill="#012a2f"/>
+<path d="M 193 370 Q 185 348 175 340" fill="#012a2f"/>
+<path d="M 193 370 Q 201 348 213 342" fill="#012a2f"/>
+</g>
+<g opacity="0.5">
+<path d="M 495 465 Q 492 410 497 372" stroke="#012a2f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M 497 372 Q 482 365 470 377" fill="#012a2f"/>
+<path d="M 497 372 Q 512 365 524 377" fill="#012a2f"/>
+<path d="M 497 372 Q 489 350 479 342" fill="#012a2f"/>
+<path d="M 497 372 Q 505 350 517 344" fill="#012a2f"/>
+</g>
+
+<g fill="#012a2f" opacity="0.55">
+<path d="M 280 195 Q 286 192 293 193 Q 297 187 305 188 Q 312 190 316 196 Q 320 193 323 198 Q 318 202 305 202 Q 293 202 280 195 Z"/>
+<path d="M 305 188 Q 302 180 298 178"/>
+<path d="M 540 155 Q 548 152 556 153 Q 560 146 568 147 Q 576 149 580 155 Q 584 152 587 157 Q 582 161 568 161 Q 556 161 540 155 Z" opacity="0.8"/>
+<path d="M 568 147 Q 566 139 561 137" opacity="0.8"/>
+</g>
+
+<g fill="#fff7c2" opacity="0.85">
+<circle cx="80" cy="80" r="1"/>
+<circle cx="220" cy="50" r="0.8"/>
+<circle cx="430" cy="70" r="1"/>
+<circle cx="560" cy="40" r="0.8"/>
+<circle cx="640" cy="105" r="1"/>
+<circle cx="150" cy="120" r="0.8"/>
+<circle cx="380" cy="130" r="0.8"/>
+</g>
+</svg>
+
+<div style="position: relative; z-index: 2; padding: 150px 28px; text-align: center; max-width: 600px; margin: 0 auto; box-sizing: border-box;">
+
+<div style="margin-bottom: 18px;">
+<div style="font-family: 'Courier New', monospace; font-size: 26px; font-weight: 900; letter-spacing: 3px; color: #fff; text-shadow: 0 0 6px #2fe0c4, 0 0 14px #2fe0c4, 0 0 24px #00d4aa;">
+🌴 PAYDAY PARADISE 🌞
+</div>
+<div style="font-size: 11px; letter-spacing: 4px; color: #ffe066; margin-top: 6px; text-shadow: 0 0 6px #ffb830, 0 0 10px #ff9a3c;">
+★ EVERY MILLISECOND COUNTS ★
+</div>
+</div>
+
+<div style="background: rgba(2, 44, 61, 0.62); backdrop-filter: blur(4px); border: 1.5px solid #2fe0c4; border-radius: 12px; padding: 18px; margin: 0 auto 16px; max-width: 600px; width: 100%; box-sizing: border-box; box-shadow: 0 0 12px rgba(47, 224, 196, 0.5), inset 0 0 12px rgba(47, 224, 196, 0.1);">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px;">
+
+<div style="text-align: left;">
+<label style="display: block; font-size: 10px; letter-spacing: 2px; color: #2fe0c4; margin-bottom: 6px; text-shadow: 0 0 4px #2fe0c4;">💵 月薪 (¥) 🤫</label>
+<div style="position: relative;">
+<input id="salary" type="password" value="15000" min="0" style="width: 100%; box-sizing: border-box; padding: 8px 36px 8px 10px; background: rgba(2, 44, 61, 0.75); border: 1px solid #ffe066; border-radius: 6px; color: #ffe066; font-family: 'Courier New', monospace; font-size: 14px; font-weight: 700; text-shadow: 0 0 4px #ffb830; outline: none; box-shadow: 0 0 6px rgba(255, 224, 102, 0.35);"/>
+<button id="toggleSalary" type="button" aria-label="显示/隐藏月薪" style="position: absolute; right: 6px; top: 50%; transform: translateY(-50%); background: transparent; border: none; color: #2fe0c4; cursor: pointer; padding: 4px 6px; font-size: 14px; line-height: 1; text-shadow: 0 0 4px #2fe0c4;">👁</button>
+</div>
+</div>
+
+<div style="text-align: left;">
+<label style="display: block; font-size: 10px; letter-spacing: 2px; color: #2fe0c4; margin-bottom: 6px; text-shadow: 0 0 4px #2fe0c4;">⏰ 每日 (h)</label>
+<input id="hours" type="number" value="8" min="1" max="24" step="0.5" style="width: 100%; box-sizing: border-box; padding: 8px 10px; background: rgba(2, 44, 61, 0.75); border: 1px solid #ffe066; border-radius: 6px; color: #ffe066; font-family: 'Courier New', monospace; font-size: 14px; font-weight: 700; text-shadow: 0 0 4px #ffb830; outline: none; box-shadow: 0 0 6px rgba(255, 224, 102, 0.35);"/>
+</div>
+
+<div style="text-align: left;">
+<label style="display: block; font-size: 10px; letter-spacing: 2px; color: #2fe0c4; margin-bottom: 6px; text-shadow: 0 0 4px #2fe0c4;">📅 每月 (天)</label>
+<input id="days" type="number" value="22" min="1" max="31" style="width: 100%; box-sizing: border-box; padding: 8px 10px; background: rgba(2, 44, 61, 0.75); border: 1px solid #ffe066; border-radius: 6px; color: #ffe066; font-family: 'Courier New', monospace; font-size: 14px; font-weight: 700; text-shadow: 0 0 4px #ffb830; outline: none; box-shadow: 0 0 6px rgba(255, 224, 102, 0.35);"/>
+</div>
+
+</div>
+</div>
+
+<div style="background: rgba(2, 44, 61, 0.72); backdrop-filter: blur(4px); border: 1.5px solid #ffe066; border-radius: 12px; padding: 20px 18px; margin: 0 auto 16px; max-width: 600px; width: 100%; box-sizing: border-box; box-shadow: 0 0 14px rgba(255, 224, 102, 0.55), inset 0 0 14px rgba(255, 224, 102, 0.12);">
+
+<div style="font-size: 10px; letter-spacing: 3px; color: #2fe0c4; margin-bottom: 6px; text-shadow: 0 0 6px #2fe0c4;">⏱ TIME ELAPSED</div>
+<div id="timer" style="font-family: 'Courier New', monospace; font-size: clamp(22px, 5.5vw, 32px); font-weight: 900; color: #2fe0c4; letter-spacing: 2px; text-shadow: 0 0 6px #2fe0c4, 0 0 14px #2fe0c4, 0 0 22px #00d4aa; margin-bottom: 14px;">
+00:00:00.000
+</div>
+
+<div style="font-size: 10px; letter-spacing: 3px; color: #ffe066; margin-bottom: 4px; text-shadow: 0 0 6px #ffb830; display: flex; align-items: center; justify-content: center; gap: 8px;">
+<span>💎 EARNINGS 🤫</span>
+<button id="toggleEarnings" type="button" aria-label="显示/隐藏收入" style="background: transparent; border: none; color: #ffe066; cursor: pointer; padding: 0 4px; font-size: 13px; line-height: 1; text-shadow: 0 0 4px #ffb830;">👁</button>
+</div>
+<div id="earnings" style="font-family: 'Courier New', monospace; font-size: clamp(32px, 8.5vw, 50px); font-weight: 900; color: #fff7c2; letter-spacing: 1px; text-shadow: 0 0 8px #ffe066, 0 0 18px #ffb830, 0 0 28px #ff9a3c; line-height: 1.1;">
+¥0.0000
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 16px; padding-top: 14px; border-top: 1px dashed rgba(47, 224, 196, 0.4);">
+<div>
+<div style="font-size: 9px; letter-spacing: 1.5px; color: #2fe0c4;">PER SEC</div>
+<div id="perSec" style="font-family: 'Courier New', monospace; font-size: 14px; font-weight: 700; color: #fff; text-shadow: 0 0 4px #2fe0c4;">¥0.00</div>
+</div>
+<div>
+<div style="font-size: 9px; letter-spacing: 1.5px; color: #2fe0c4;">PER MIN</div>
+<div id="perMin" style="font-family: 'Courier New', monospace; font-size: 14px; font-weight: 700; color: #fff; text-shadow: 0 0 4px #2fe0c4;">¥0.00</div>
+</div>
+<div>
+<div style="font-size: 9px; letter-spacing: 1.5px; color: #2fe0c4;">PER HOUR</div>
+<div id="perHour" style="font-family: 'Courier New', monospace; font-size: 14px; font-weight: 700; color: #fff; text-shadow: 0 0 4px #2fe0c4;">¥0.00</div>
+</div>
+</div>
+
+</div>
+
+<div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+<button id="startBtn" style="flex: 1; min-width: 110px; max-width: 180px; padding: 12px 18px; background: linear-gradient(135deg, #2fe0c4, #0a6e7e); border: 2px solid #ffe066; border-radius: 8px; color: #fff7c2; font-family: 'Courier New', monospace; font-size: 13px; font-weight: 900; letter-spacing: 2px; cursor: pointer; text-shadow: 0 0 6px #fff7c2; box-shadow: 0 0 12px #2fe0c4, 0 0 20px rgba(47, 224, 196, 0.5); transition: transform 0.1s;">
+▶ 上班
+</button>
+<button id="stopBtn" style="flex: 1; min-width: 110px; max-width: 160px; padding: 12px 18px; background: linear-gradient(135deg, #ff9a3c, #d94a2a); border: 2px solid #fff7c2; border-radius: 8px; color: #fff; font-family: 'Courier New', monospace; font-size: 13px; font-weight: 900; letter-spacing: 2px; cursor: pointer; text-shadow: 0 0 6px #fff; box-shadow: 0 0 12px #ff9a3c, 0 0 20px rgba(255, 154, 60, 0.5); transition: transform 0.1s;">
+■ 下班
+</button>
+<button id="pauseBtn" style="flex: 1; min-width: 100px; max-width: 140px; padding: 12px 16px; background: rgba(2, 44, 61, 0.75); border: 2px solid #2fe0c4; border-radius: 8px; color: #2fe0c4; font-family: 'Courier New', monospace; font-size: 12px; font-weight: 900; letter-spacing: 2px; cursor: pointer; text-shadow: 0 0 6px #2fe0c4; box-shadow: 0 0 10px rgba(47, 224, 196, 0.45); transition: transform 0.1s;">
+❚❚ 摸鱼
+</button>
+<button id="resetBtn" style="flex: 1; min-width: 120px; max-width: 170px; padding: 12px 16px; background: rgba(2, 44, 61, 0.75); border: 2px solid #ffe066; border-radius: 8px; color: #ffe066; font-family: 'Courier New', monospace; font-size: 12px; font-weight: 900; letter-spacing: 2px; cursor: pointer; text-shadow: 0 0 6px #ffb830; box-shadow: 0 0 10px rgba(255, 224, 102, 0.45); transition: transform 0.1s;">
+🌅 新的一天
+</button>
+</div>
+
+<div style="margin-top: 14px; font-size: 9px; letter-spacing: 3px; color: rgba(255, 247, 194, 0.65);">
+🌊 ░▒▓ TROPICAL MODE ON ▓▒░ 🌊
+</div>
+
+</div>
+
+<style>
+#money-app input:focus { border-color: #fff7c2 !important; box-shadow: 0 0 10px #fff7c2 !important; }
+#money-app button:hover { transform: translateY(-2px) scale(1.02); }
+#money-app button:active { transform: scale(0.96); }
+#money-app input::-webkit-outer-spin-button, #money-app input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+#money-app input[type=number] { -moz-appearance: textfield; }
+@keyframes neon-flicker { 0%, 100% { opacity: 1; } 48% { opacity: 1; } 50% { opacity: 0.88; } 52% { opacity: 1; } }
+#money-app [style*="PAYDAY PARADISE"] { animation: neon-flicker 5s infinite; }
+</style>
+
+<script>
+(function(){
+  const $ = id => document.getElementById(id);
+  let startTime = 0, elapsed = 0, rafId = null, running = false, stopped = false;
+
+  function fmtTime(ms){
+    const h = Math.floor(ms/3600000);
+    const m = Math.floor((ms%3600000)/60000);
+    const s = Math.floor((ms%60000)/1000);
+    const mm = Math.floor(ms%1000);
+    return String(h).padStart(2,'0')+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')+'.'+String(mm).padStart(3,'0');
+  }
+
+  function getRates(){
+    const salary = parseFloat($('salary').value) || 0;
+    const hours = parseFloat($('hours').value) || 1;
+    const days = parseFloat($('days').value) || 1;
+    const perSec = salary / days / hours / 3600;
+    return { perSec, perMin: perSec*60, perHour: perSec*3600 };
+  }
+
+  function updateRates(){
+    const r = getRates();
+    $('perSec').textContent = '¥' + r.perSec.toFixed(4);
+    $('perMin').textContent = '¥' + r.perMin.toFixed(2);
+    $('perHour').textContent = '¥' + r.perHour.toFixed(2);
+  }
+
+  function tick(){
+    const now = performance.now();
+    const ms = elapsed + (now - startTime);
+    $('timer').textContent = fmtTime(ms);
+    const r = getRates();
+    const earned = (ms/1000) * r.perSec;
+    $('earnings').textContent = '¥' + earned.toFixed(4);
+    rafId = requestAnimationFrame(tick);
+  }
+
+  $('startBtn').onclick = () => {
+    if (running || stopped) return;
+    running = true;
+    startTime = performance.now();
+    tick();
+    $('startBtn').textContent = '▶ 搬砖中';
+  };
+
+  $('pauseBtn').onclick = () => {
+    if (!running) return;
+    running = false;
+    elapsed += performance.now() - startTime;
+    cancelAnimationFrame(rafId);
+    $('startBtn').textContent = '▶ 继续上班';
+  };
+
+  $('stopBtn').onclick = () => {
+    if (stopped) return;
+    if (running) {
+      elapsed += performance.now() - startTime;
+      cancelAnimationFrame(rafId);
+    }
+    running = false;
+    stopped = true;
+    $('startBtn').textContent = '🎉 已下班';
+  };
+
+  $('resetBtn').onclick = () => {
+    running = false;
+    stopped = false;
+    elapsed = 0;
+    cancelAnimationFrame(rafId);
+    $('timer').textContent = '00:00:00.000';
+    $('earnings').textContent = '¥0.0000';
+    $('startBtn').textContent = '▶ 上班';
+  };
+
+  ['salary','hours','days'].forEach(id => $(id).addEventListener('input', updateRates));
+  updateRates();
+
+  // ===== 两个独立的隐藏开关 =====
+  const salaryInput = $('salary');
+  const salaryBtn = $('toggleSalary');
+  const earningsBtn = $('toggleEarnings');
+  const earningsEl = $('earnings');
+  const perSecEl = $('perSec');
+  const perMinEl = $('perMin');
+  const perHourEl = $('perHour');
+
+  // 1) 月薪隐藏（只影响输入框本身）
+  let salaryHidden = true;
+  function applySalaryHidden(){
+    if (salaryHidden) {
+      salaryInput.type = 'password';
+      salaryBtn.textContent = '👁';
+      salaryBtn.style.color = '#2fe0c4';
+      salaryBtn.style.textShadow = '0 0 4px #2fe0c4';
+    } else {
+      salaryInput.type = 'number';
+      salaryBtn.textContent = '🙈';
+      salaryBtn.style.color = '#ffe066';
+      salaryBtn.style.textShadow = '0 0 4px #ffb830';
+    }
+  }
+  salaryBtn.addEventListener('click', () => {
+    salaryHidden = !salaryHidden;
+    applySalaryHidden();
+  });
+  applySalaryHidden();
+
+  // 2) 收入隐藏（只影响 earnings 和三个小数字）
+  let earningsHidden = true;
+  function applyEarningsHidden(){
+    const blur = earningsHidden ? 'blur(10px)' : 'none';
+    [earningsEl, perSecEl, perMinEl, perHourEl].forEach(el => {
+      el.style.filter = blur;
+    });
+    if (earningsHidden) {
+      earningsBtn.textContent = '👁';
+      earningsBtn.style.color = '#ffe066';
+    } else {
+      earningsBtn.textContent = '🙈';
+      earningsBtn.style.color = '#2fe0c4';
+      earningsBtn.style.textShadow = '0 0 4px #2fe0c4';
+    }
+  }
+  earningsBtn.addEventListener('click', () => {
+    earningsHidden = !earningsHidden;
+    applyEarningsHidden();
+  });
+  applyEarningsHidden();
+})();
+</script>
+
+</div></body>
+</html>
